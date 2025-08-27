@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[M02S06] Ex.04 – Listagem de Celulares III</title>
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Listagem de Celulares III</h1>
+    <p class="muted">Itens carregados do <code>localStorage</code> (chave: <code>celulares_m02s06</code>).</p>
+  </header>
+
+  <main class="container stack">
+    <div class="card">
+      <div class="card__body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Armazenamento</th>
+                <th>Cor</th>
+                <th>Preço</th>
+                <th>SO</th>
+                <th class="col-actions">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+
+        <div class="actions">
+          <button id="btn-cadastrar" class="btn btn--primary">Cadastrar</button>
+        </div>
+        <p id="vazio" class="empty muted" style="display:none">Nenhum celular cadastrado.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.table-responsive { width: 100%; overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: .75rem; border-bottom: 1px solid var(--color-border); text-align: left; }
+.table thead th { background: #f8fafc; }
+.table tr:hover td { background: #fafafa; }
+.col-actions { width: 120px; }
+.empty { margin-top: var(--space-3); }

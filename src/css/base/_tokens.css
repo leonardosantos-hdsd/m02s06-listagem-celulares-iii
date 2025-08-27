@@ -1,0 +1,19 @@
+:root{
+  --color-bg: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-primary: #2563eb;
+  --color-primary-contrast: #ffffff;
+  --color-border: #e2e8f0;
+  --color-danger: #dc2626;
+
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+
+  --radius: .75rem;
+  --shadow: 0 8px 24px rgba(2,6,23,.08);
+
+  --h1: clamp(1.6rem, 2.5vw, 2rem);
+}
