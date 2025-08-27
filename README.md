@@ -1,4 +1,4 @@
-# [M02S06] Ex.: 04 – Listagem de Celulares II
+# [M02S06] Ex.: 04 – Listagem de Celulares III
 
 Lista itens a partir do `localStorage` (chave: `celulares_m02s06`), com:
 - Tabela de celulares cadastrados no **Ex. 03 – Cadastro de Celulares II**
