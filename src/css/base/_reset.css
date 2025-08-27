@@ -1,5 +1,0 @@
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell; line-height: 1.5; color: var(--color-text); background: var(--color-bg); }
-img, svg, video { max-width: 100%; display: block; }
-button, input, select, textarea { font: inherit; }

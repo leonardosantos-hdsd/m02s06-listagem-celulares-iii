@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Listagem de Celulares</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <img src="assets/logo.png" alt="Logo da loja" class="logo">
+    <h1>Listagem de Celulares</h1> 
+  </header>
+
+  <main>
+    <section class="tabela-container">
+      <!-- <h2>Celulares cadastrados</h2> -->
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem;">
+        <h2>Celulares cadastrados</h2>
+        <!-- Botão de tema exigido nesta página -->
+        <button type="button" id="themeToggle">Tema Escuro</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Valor (R$)</th>
+            <th>Estado</th>
+            <th>Demais Informações</th>
+            <th>Ações</th> <!-- NOVA COLUNA -->
+          </tr>
+        </thead>
+        <tbody id="tbodyCelulares">
+          <!-- Linhas geradas via JS -->
+        </tbody>
+      </table>
+
+      <!-- Botão Cadastrar abaixo da tabela -->
+      <div class="botoes" style="margin-top: 1rem;">
+        <button type="button" id="btnCadastrar">Cadastrar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LAB365 Celulares LTDA - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script específico da listagem -->
+  <script src="js/theme.js"></script>
+  <script src="js/listagem.js"></script>
+</body>
+</html>
