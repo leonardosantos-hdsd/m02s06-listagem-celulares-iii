@@ -1,45 +1,62 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[M02S06] Ex.04 – Listagem de Celulares III</title>
-  <link rel="stylesheet" href="src/css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Celulares</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="container">
-    <h1>Listagem de Celulares III</h1>
-    <p class="muted">Itens carregados do <code>localStorage</code> (chave: <code>celulares_m02s06</code>).</p>
+  <header class="cabecalho">
+    <img src="assets/logo.png" alt="Logo da loja" class="logo">
+    <h1>Cadastro de Celulares</h1> 
   </header>
 
-  <main class="container stack">
-    <div class="card">
-      <div class="card__body">
-        <div class="table-responsive">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Armazenamento</th>
-                <th>Cor</th>
-                <th>Preço</th>
-                <th>SO</th>
-                <th class="col-actions">Ações</th>
-              </tr>
-            </thead>
-            <tbody id="tbody"></tbody>
-          </table>
-        </div>
+  <main>
+    <form id="formCadastro">
+      <label for="marca">Marca:</label>
+      <select id="marca" name="marca">
+        <option>Samsung</option>
+        <option>iPhone</option>
+        <option>Motorola</option>
+        <option>LG</option>
+        <option>Outra</option>
+      </select>
 
-        <div class="actions">
-          <button id="btn-cadastrar" class="btn btn--primary">Cadastrar</button>
-        </div>
-        <p id="vazio" class="empty muted" style="display:none">Nenhum celular cadastrado.</p>
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" required />
+
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" name="cor" />
+
+      <label for="valor">Valor (R$):</label>
+      <input type="number" id="valor" name="valor" required />
+
+      <fieldset>
+        <legend>Condição:</legend>
+        <label><input type="radio" name="condicao" value="novo" checked /> Novo</label>
+        <label><input type="radio" name="condicao" value="usado" /> Usado</label>
+      </fieldset>
+
+      <label for="info">Demais Informações:</label>
+      <textarea id="info" name="info" rows="4"></textarea>
+
+      <!-- <div class="botoes">
+        <button type="submit">Salvar</button>
+        <button type="button" onclick="history.back()">Voltar</button>
+      </div> -->
+      <div class="botoes">
+        <button id="btnSalvar" type="submit" disabled>Salvar</button>
+        <!-- redireciona diretamente para a listagem -->
+        <button type="button" id="btnVoltar">Voltar</button>
       </div>
-    </div>
+    </form>
   </main>
 
-  <script src="src/js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 LAB365 Celulares LTDA - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
