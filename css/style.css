@@ -163,6 +163,7 @@ tbody tr:nth-child(even) {
 #btnCadastrar:hover {
   background-color: #1b5fa7;
 }
+<<<<<<< HEAD
 
 /* ===================== */
 /*   PALETA (variáveis)  */
@@ -346,3 +347,5 @@ tbody tr:nth-child(even) {
     font-size: 0.9rem;
   }
 }
+=======
+>>>>>>> f049416a6e8e310c394e2339df4c3f140efe759f
